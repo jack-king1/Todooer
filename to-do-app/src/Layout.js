@@ -7,10 +7,10 @@ function Layout() {
   return (
     <>
       <flex class="hidden md:flex space-x-6 drop-shadow">
-        <Link to="/" className="hover:text-red text-4xl">
+        <Link to="/" className="hover:text-red text-4xl text-white">
           Home
         </Link>
-        <Link to="/About" className="hover:text-red text-4xl">
+        <Link to="/About" className="hover:text-red text-4xl text-white">
           About
         </Link>
       </flex>
