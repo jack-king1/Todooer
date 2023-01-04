@@ -1,5 +1,6 @@
 import ToDoItem from "./components/ToDo";
 import ToDoForm from "./components/ToDoForm";
+import ToDoList from "./components/ToDoList";
 import Layout from "./Layout";
 const Home = () => {
   var toDoList;
@@ -13,7 +14,7 @@ const Home = () => {
 
   return (
     <>
-      <ToDoForm />
+      <ToDoList />
     </>
   );
 };

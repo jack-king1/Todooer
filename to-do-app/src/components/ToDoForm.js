@@ -4,21 +4,22 @@ import { Form } from "react-router-dom";
 function ToDoForm(props) {
   const [input, setInput] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmitFunc = (e) => {
     e.preventDefault();
-    // props.onSubmit({
-    //   id: Math.floor(Math.random() * 10000),
-    //   text: input,
-    // });
-    alert("I am an alert box!");
+    props.onSubmit({
+      id: Math.floor(Math.random() * 10000),
+      text: input,
+    });
+    console.log("Submitted");
     setInput("");
   };
 
   const handleOnChange = (e) => {
     setInput(e.target.value);
+    console.log("Changed!");
   };
   return (
-    <form className="todo-form" onSubmit={handleSubmit}>
+    <form className="todo-form">
       <input
         type="text"
         placeholder="Add to do"
@@ -27,7 +28,13 @@ function ToDoForm(props) {
         className="todo-input"
         onChange={handleOnChange}
       />
-      <button type="button">Add Todo</button>
+      <button
+        type="button"
+        onClick={handleSubmitFunc}
+        className="inline-block px-2.5 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out"
+      >
+        AddToDo
+      </button>
     </form>
   );
 }
