@@ -28,7 +28,15 @@ function ToDoList() {
 
   const removeTodo = (id) => {
     // console.log("removing id" + id);
-    const removeArr = { ...todos.filter((todo) => todo.id !== id) };
+    const removeArr = todos.filter((todo) => todo.id !== id);
+
+    // const newArray = removeArr.map((obj) => {
+    //   return Object.keys(obj).map((key) => {
+    //     return obj[key];
+    //   });
+    // });
+
+    console.log(Array.isArray(removeArr));
     setToDos(removeArr);
     console.log(removeArr);
   };
