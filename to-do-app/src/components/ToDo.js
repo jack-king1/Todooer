@@ -10,7 +10,11 @@ function ToDo({ todos, completeTodo, removeTodo }) {
 
   return todos.map((todo, index) => (
     <div
-      className={todo.isComplete ? "todo-row complete" : "todo-row"}
+      className={
+        todo.isComplete
+          ? "todo-row complete"
+          : "todo-row content-center mx-auto items-center bg-blue-500 px-8 rounded-md"
+      }
       key={index}
     >
       <div key={todo.id} onClick={() => completeTodo(todo.id)}>

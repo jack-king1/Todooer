@@ -27,25 +27,25 @@ function ToDoList() {
   };
 
   const removeTodo = (id) => {
-    // console.log("removing id" + id);
     const removeArr = todos.filter((todo) => todo.id !== id);
-
-    // const newArray = removeArr.map((obj) => {
-    //   return Object.keys(obj).map((key) => {
-    //     return obj[key];
-    //   });
-    // });
-
-    console.log(Array.isArray(removeArr));
     setToDos(removeArr);
-    console.log(removeArr);
   };
 
   return (
-    <div>
-      <h1 className="text-white">Whats the plan for today?</h1>
-      <ToDoForm onSubmit={AddToDo} />
-      <ToDo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} />
+    <div className="bg-white-400">
+      <h1 className="text-white text-center font-poppins text-4xl pb-4">
+        Whats the plan for today?
+      </h1>
+      <div className="flex justify-center w-1/2 mx-auto ">
+        <ToDoForm onSubmit={AddToDo} />
+      </div>
+      <div className="mt-6 border-solid border-red-500 w-1/2 mx-auto">
+        <ToDo
+          todos={todos}
+          completeTodo={completeTodo}
+          removeTodo={removeTodo}
+        />
+      </div>
     </div>
   );
 }

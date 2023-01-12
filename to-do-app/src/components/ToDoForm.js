@@ -19,23 +19,26 @@ function ToDoForm(props) {
     console.log("Changed!");
   };
   return (
-    <form className="todo-form">
-      <input
-        type="text"
-        placeholder="Add to do"
-        value={input}
-        name="text"
-        className="todo-input"
-        onChange={handleOnChange}
-      />
-      <button
-        type="button"
-        onClick={handleSubmitFunc}
-        className="inline-block px-2.5 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out"
-      >
-        AddToDo
-      </button>
-    </form>
+    <div className="bg-white rounded-md w-full">
+      <form className="todo-form flex">
+        <input
+          type="text"
+          placeholder="Add to do"
+          value={input}
+          name="text"
+          className="todo-input pl-4 rounded-md mr-2 w-full"
+          onChange={handleOnChange}
+        />
+
+        <button
+          type="button"
+          onClick={handleSubmitFunc}
+          className="inline-block px-5 py-5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out"
+        >
+          AddToDo
+        </button>
+      </form>
+    </div>
   );
 }
 

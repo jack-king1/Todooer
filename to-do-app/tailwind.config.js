@@ -12,6 +12,9 @@ module.exports = {
       colors: {
         redd: "hsl(8, 100%, 50%)",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],
