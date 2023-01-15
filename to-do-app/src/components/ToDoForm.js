@@ -20,7 +20,7 @@ function ToDoForm(props) {
   };
   return (
     <div className="bg-white rounded-md w-full">
-      <form className="todo-form flex">
+      <form className="todo-form flex" onSubmit={handleSubmitFunc}>
         <input
           type="text"
           placeholder="Add to do"
@@ -31,8 +31,7 @@ function ToDoForm(props) {
         />
 
         <button
-          type="button"
-          onClick={handleSubmitFunc}
+          type="submit"
           className="inline-block px-5 py-5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out"
         >
           AddToDo

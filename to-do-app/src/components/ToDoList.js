@@ -27,6 +27,7 @@ function ToDoList() {
   };
 
   const removeTodo = (id) => {
+    id.stopPropogation();
     const removeArr = todos.filter((todo) => todo.id !== id);
     setToDos(removeArr);
   };
