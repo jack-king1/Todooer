@@ -14,6 +14,9 @@ const Home = () => {
 
   return (
     <>
+      <h1 className="text-white text-center font-myFont p-4 text-4xl md:text-left md:text-7xl">
+        Todooer
+      </h1>
       <ToDoList />
     </>
   );

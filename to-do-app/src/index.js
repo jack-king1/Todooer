@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <BrowserRouter>
-    <div className="w-screen h-screen bg-gray-900">
+    <div className="min-w-screen min-h-screen object-fill bg-gradient-to-r from-blue-800 to-indigo-900 pb-12">
       <App />
     </div>
   </BrowserRouter>
