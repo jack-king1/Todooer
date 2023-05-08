@@ -21,11 +21,11 @@ function ToDoForm(props) {
   useEffect(() => {
     if (screenWidth < 768) {
       // call your function here
-      setmaxLength(30);
+      setmaxLength(65);
       console.log("MaxLength at 30");
     } else if (screenWidth >= 768) {
       console.log("MaxLength at 30");
-      setmaxLength(30);
+      setmaxLength(65);
     }
   }, [screenWidth]);
 
