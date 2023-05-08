@@ -34,15 +34,12 @@ function ToDoForm(props) {
   });
 
   const GetTime = () => {
-    const dateVal = new Date();
-
-    return (
-      dateVal.getDate().toString() +
-      "/" +
-      dateVal.getDay().toString() +
-      "/" +
-      dateVal.getFullYear().toString()
-    );
+    const currentDate = new Date();
+    const day = currentDate.getDate().toString().padStart(2, "0");
+    const month = (currentDate.getMonth() + 1).toString().padStart(2, "0"); // Adding 1 to the month since January is represented by 0
+    const year = currentDate.getFullYear().toString();
+    let formatedDate = `${day}/${month}/${year}`;
+    return formatedDate;
   };
 
   const handleSubmitFunc = (e) => {
