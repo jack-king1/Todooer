@@ -1,7 +1,7 @@
 # Todooer
 ## What is Todooer?
 Todooer is a simple todo app. Features include create todo, delete todo and edit todo.
-![Product Page](https://github.com/jack-king1/WebsiteBrochure_React/blob/main/ReadMePhotos/header.jpg)
+![Product Page](https://github.com/jack-king1/React-ToDo/blob/main/ReadmePhotos/home.jpg)
 
 ## How To Access Todooer?
 Just visit the live URL: [Todooer (CTRL/CMD + Click for new window)](https://todooer.netlify.app/)
@@ -25,4 +25,4 @@ As i use Todooer to develop my other projects as a light weight todo app, i woul
 3. Ability to seperate todos into lists
 4. View previously completed todos
 
-![Download App Img](https://github.com/jack-king1/WebsiteBrochure_React/blob/main/ReadMePhotos/download.jpg)
+![Download App Img](https://github.com/jack-king1/React-ToDo/blob/main/ReadmePhotos/editpage.jpg)
