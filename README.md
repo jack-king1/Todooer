@@ -8,8 +8,7 @@ Just visit the live URL: [Todooer (CTRL/CMD + Click for new window)](https://tod
 
 ## Technologies
 1. Javascript, CSS, HTML
-2. Azure Web Services
-3. Netlify
+2. Netlify
 
 Current Features:
 1. Create Todos
